@@ -17,7 +17,7 @@ source myenv/bin/activate  # Для Windows используйте `myenv\Script
 
 ## Установите зависимости:
 pip install -r requirements.txt
-Настройте переменные окружения в файле .env:
+## Настройте переменные окружения в файле .env:
 
 env
 DEBUG=True
@@ -26,10 +26,9 @@ DATABASE_URL='postgres://user:password@localhost:5432/mydatabase'
 ## Создайте и примените миграции:
 python manage.py makemigrations
 python manage.py migrate
-
 ## Запустите сервер разработки:
-python manage.py runserver
-Функциональность
+python manage.py runserver 
+## Функциональность
 Древовидное меню с неограниченной вложенностью.
 Меню редактируется через стандартную админку Django.
 Поддержка named URL.
